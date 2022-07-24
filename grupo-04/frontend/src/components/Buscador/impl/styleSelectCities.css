@@ -1,0 +1,58 @@
+
+.listSelectCites {
+    
+    background-color: white;
+    color: var(--gris-oscuro);
+    padding: 10px;
+    box-shadow: rgb(112 112 112) 2px 9px 24px 4px;
+    z-index: 2;
+    font-size: 1.2rem;
+
+    margin-top: 10px;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    height: 280px;
+}
+
+.listSelectCites::-webkit-scrollbar{
+    background-color: white;
+    width: 8px;
+    border-radius: 5px;
+}
+.listSelectCites::-webkit-scrollbar-thumb{
+    background: var(--gris-claro);
+    border-radius: 5px;
+}
+
+.listSelectCites li {
+    display: flex;
+    list-style: none;
+    border-top: 2px solid var(--naranja);
+    text-align:center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.listSelectCites li:first-child {
+    border-top: none;
+}
+
+.listSelectCites li i {
+    margin: 10px;
+}
+
+.listSelectCites li div .cityName{
+    font-weight :bold ;
+}
+.cityText{
+    margin-left: 10px;
+    text-align: start;
+}
+    
+
+
+@media (max-width:414px){
+    
+}

@@ -1,0 +1,467 @@
+.super {
+  position: relative;
+  flex: 1;
+}
+
+.pages {
+  color: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.recomendaciones-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pages .page {
+  margin: 0px 10px;
+  font-weight: 500;
+}
+
+.pages .fa-angle-left,
+.pages .fa-angle-right {
+  background-color: var(--gris-claro);
+  color: var(--negro);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.pages .fa-angle-left:hover,
+.pages .fa-angle-right:hover {
+  background-color: whitesmoke;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.1s;
+}
+
+.pages .fa-angle-left:active,
+.pages .fa-angle-right:active {
+  transform: scale(0.90);
+  transition: 0.1s;
+}
+
+.recomendaciones-container h3 {
+  margin: 16.5px;
+}
+
+.show-on-map-background {
+  position: absolute;
+  top: 1px;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.show-on-map {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  align-items: center;
+  opacity: 0;
+  transition: top 0s 0.3s ease-in-out,
+    opacity 0.2s 0s ease-in-out,
+    transform 0.6s 0s ease-in-out;
+  width: 50%;
+  padding: 20px;
+  border-radius: 6px;
+  height: 70%;
+  background-color: white;
+  border: 2px solid;
+  top: 20%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.559);
+  flex-direction: column;
+}
+
+.show-on-map-item {
+  margin: 10px 0px;
+  font-size: 22px;
+}
+
+.show-on-map-active {
+  visibility: visible;
+  opacity: 1;
+  transition: top 0s 0s ease-in-out,
+    opacity 0.2s 0s ease-in-out,
+    transform 0.4s 0s ease-in-out;
+}
+
+.show-on-map-exit {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .title-filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 25px;
+  }
+
+  .title-filter h2 {
+    margin: 0 0 10px;
+  }
+
+  .title-filter .clear-filter {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 30px;
+    border: solid 1px var(--negro);
+    transition: .4s;
+  }
+
+  .title-filter .clear-filter:hover {
+    transform: scale(1.03);
+    transition: .2s;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+  }
+
+  .block-main {
+    background-color: var(--gris-claro);
+    display: flex;
+    column-count: auto;
+    max-width: auto;
+    margin: 5px 25px 0px;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .render-container {
+    width: 50%;
+  }
+
+  .recomendaciones-container .render-container {
+    width: 639px;
+  }
+
+  .super {
+    background-color: var(--gris-claro);
+    padding-top: 15px;
+  }
+
+  .block-h2 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .super .loader {
+    display: flex;
+    justify-content: center;
+    padding: 58.3px;
+  }
+
+  .loader .loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loading h2 {
+    color: var(--negro);
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+
+  .loading span {
+    display: inline-block;
+    vertical-align: middle;
+    width: .6em;
+    height: .6em;
+    margin: .4em;
+    background: var(--naranja);
+    border-radius: .6em;
+    animation: loading 1s infinite alternate;
+  }
+
+  .loading span:nth-of-type(2) {
+    background: var(--naranja);
+    animation-delay: 0.2s;
+  }
+
+  .loading span:nth-of-type(3) {
+    background: var(--naranja);
+    animation-delay: 0.4s;
+  }
+
+  .loading span:nth-of-type(4) {
+    background: var(--naranja);
+    animation-delay: 0.6s;
+  }
+
+  .loading span:nth-of-type(5) {
+    background: var(--naranja);
+    animation-delay: 0.8s;
+  }
+
+  .loading span:nth-of-type(6) {
+    background: var(--naranja);
+    animation-delay: 1.0s;
+  }
+
+  .loading span:nth-of-type(7) {
+    background: var(--naranja);
+    animation-delay: 1.2s;
+  }
+
+  @keyframes loading {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 25px;
+  }
+
+  .title-filter h2 {
+    margin: 0 0 10px;
+  }
+
+  .title-filter .clear-filter {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 30px;
+    border: solid 1px var(--negro);
+    transition: .4s;
+  }
+
+  .recomendaciones-container h3 {
+    margin: 23px;
+  }
+
+  .block-main {
+    margin: 5px;
+  }
+
+  .block-h2 {
+    margin-left: 15px;
+  }
+
+  .render-container {
+    margin: 10px 15px;
+  }
+
+  .super {
+    background-color: var(--gris-claro);
+    padding-top: 15px;
+  }
+
+  .super .loader {
+    display: flex;
+    justify-content: center;
+    padding: 169.3px;
+  }
+
+  .loader .loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loading h2 {
+    color: var(--negro);
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+
+  .loading span {
+    display: inline-block;
+    vertical-align: middle;
+    width: .6em;
+    height: .6em;
+    margin: .4em;
+    background: var(--naranja);
+    border-radius: .6em;
+    animation: loading 1s infinite alternate;
+  }
+
+  .loading span:nth-of-type(2) {
+    background: var(--naranja);
+    animation-delay: 0.2s;
+  }
+
+  .loading span:nth-of-type(3) {
+    background: var(--naranja);
+    animation-delay: 0.4s;
+  }
+
+  .loading span:nth-of-type(4) {
+    background: var(--naranja);
+    animation-delay: 0.6s;
+  }
+
+  .loading span:nth-of-type(5) {
+    background: var(--naranja);
+    animation-delay: 0.8s;
+  }
+
+  .loading span:nth-of-type(6) {
+    background: var(--naranja);
+    animation-delay: 1.0s;
+  }
+
+  .loading span:nth-of-type(7) {
+    background: var(--naranja);
+    animation-delay: 1.2s;
+  }
+
+  @keyframes loading {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+
+@media screen and (max-width: 414px) {
+  .title-filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 25px;
+  }
+
+  .title-filter h2 {
+    margin: 0 0 10px;
+  }
+
+  .title-filter .clear-filter {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 30px;
+    border: solid 1px var(--negro);
+    transition: .4s;
+  }
+
+  .recomendaciones-container h3 {
+    margin: 16px;
+  }
+
+  .block-h2 {
+    margin-left: 15px;
+  }
+
+  .render-container {
+    margin: 0;
+  }
+
+  .super {
+    background-color: var(--gris-claro);
+    padding-top: 15px;
+  }
+
+  .block-h2 {
+    font-size: 20px;
+  }
+
+  .super .loader {
+    display: flex;
+    justify-content: center;
+    padding: 26px;
+  }
+
+  .loader .loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loading h2 {
+    color: var(--negro);
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+
+  .loading span {
+    display: inline-block;
+    vertical-align: middle;
+    width: .6em;
+    height: .6em;
+    margin: .3em;
+    background: var(--naranja);
+    border-radius: .6em;
+    animation: loading 1s infinite alternate;
+  }
+
+  .loading span:nth-of-type(2) {
+    background: var(--naranja);
+    animation-delay: 0.2s;
+  }
+
+  .loading span:nth-of-type(3) {
+    background: var(--naranja);
+    animation-delay: 0.4s;
+  }
+
+  .loading span:nth-of-type(4) {
+    background: var(--naranja);
+    animation-delay: 0.6s;
+  }
+
+  .loading span:nth-of-type(5) {
+    background: var(--naranja);
+    animation-delay: 0.8s;
+  }
+
+  .loading span:nth-of-type(6) {
+    background: var(--naranja);
+    animation-delay: 1.0s;
+  }
+
+  .loading span:nth-of-type(7) {
+    background: var(--naranja);
+    animation-delay: 1.2s;
+  }
+
+  @keyframes loading {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}

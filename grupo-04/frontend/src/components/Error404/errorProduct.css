@@ -1,0 +1,103 @@
+.product-not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.product-not-found button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 3px 5px rgb(0,0,0,0.4);
+  transition: .3s;
+}
+@media only screen and (max-width: 767px) {
+  .product-not-found h1 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--negro);
+    margin: 10px auto;
+  }
+  .product-not-found .not-found-GIF {
+    display: flex;
+    margin: 0 auto;
+    width: 270px;
+    height: 320px;
+  }
+  .product-not-found button {
+    background-color: var(--naranja);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 30px;
+    transition: .3s;
+  }
+  
+  .product-not-found button a{
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+  .button-home{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .product-not-found h1 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--negro);
+    margin: 10px auto;
+  }
+  .product-not-found .not-found-GIF {
+    display: flex;
+    margin: 0 auto;
+    width: 450px;
+    height: 500px;
+  }
+  .product-not-found button {
+    background-color: var(--naranja);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 30px;
+    transition: .3s;
+  }
+  .product-not-found button a{
+    color: white;
+    font-size: 25px;
+    padding: 10px 30px;
+  }
+  .button-home{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .product-not-found h1 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--negro);
+  }
+  .product-not-found .not-found-GIF {
+    display: flex;
+    margin: 0 auto;
+    width: 300px;
+    height: 350px;
+  }
+  .product-not-found button {
+    background-color: var(--naranja);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 30px;
+    transition: .3s;
+  }
+  .product-not-found button a{
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+}

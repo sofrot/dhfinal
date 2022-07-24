@@ -1,0 +1,303 @@
+.containerFormLogin{
+  flex: 1;
+}
+.containerFormLogin .formFlex .inputLabel .showPassword {
+  font-size: 20px;
+  position: absolute;
+  margin-top: 30.5px;
+  margin-left: 260px;
+  color: #b2b9c1;
+  cursor: pointer;
+}
+.containerFormLogin .formFlex .inputLabel .hidePassword {
+  font-size: 20px;
+  position: absolute;
+  margin-top: 30.5px;
+  margin-left: 260px;
+  color: var(--gris-oscuro);
+  cursor: pointer;
+}
+.containerFormLogin .formFlex .inputLabel input {
+  border: none;
+}
+.containerFormLogin .formFlex .inputLabel input:focus {
+  outline: none;
+}
+.inputLabel .alert {
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
+  position: absolute;
+}
+.containerFormLogin .container-message {
+  display: flex;
+  justify-content: center;
+}
+.containerFormLogin .container-message .submit-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  color: red;
+  margin-top: 25px;
+  padding: 15px 22px;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: rgba(255, 0, 0, 0.2);
+  border: solid 1.5px red;
+  font-size: 14px;
+}
+.containerFormLogin .container-message .submit-message i{
+  font-size: 16px;
+}
+.containerFormLogin .formFlex .inputLabel .invalid-input {
+  background-color: rgba(255, 0, 0, 0.2);
+  border: solid 1.5px red;
+}
+@media only screen and (max-width: 768px) {
+  .containerFormLogin h3 {
+    color: var(--naranja);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 90px;
+    text-align: center;
+  }
+  .containerFormLogin .formFlex {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    margin-top: 40px;
+    gap: 25px;
+  }
+  .containerFormLogin .formFlex .inputLabel {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerFormLogin .formFlex .inputLabel label {
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+  }
+  .containerFormLogin .formFlex .inputLabel input {
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .containerFormLogin .formFlex .inputLabel input:focus {
+    transform: scale(1.02);
+  }
+  .containerFormLogin .formFlex .inputLabel button {
+    margin-top: 25px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: white;
+    background-color: var(--naranja);
+    transition: 0.3s;
+  }
+  .containerFormLogin .formFlex .inputLabel button:active {
+    background-color: #94381e;
+    transform: scale(0.95);
+    transition: 0s;
+  }
+  .containerFormLogin .formFlex .inputLabel p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 152px;
+  }
+  .containerFormLogin .formFlex .inputLabel a {
+    color: #4285f4;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .containerFormLogin .formFlex .inputLabel .showPassword {
+    margin-top: 33px;
+    margin-left: 305px;
+  }
+  .containerFormLogin .formFlex .inputLabel .hidePassword {
+    margin-top: 33px;
+    margin-left: 305px;
+  }
+  .containerFormLogin .container-message .submit-message{
+    margin-top: 100px;
+  }
+  .containerFormLogin h3 {
+    color: var(--naranja);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 230px;
+    text-align: center;
+  }
+  .containerFormLogin .formFlex {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 346px;
+    margin-top: 55px;
+    gap: 25px;
+  }
+  .containerFormLogin .formFlex .inputLabel {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerFormLogin .formFlex .inputLabel label {
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 7px;
+  }
+  .containerFormLogin .formFlex .inputLabel input {
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .containerFormLogin .formFlex .inputLabel input:focus {
+    transform: scale(1.02);
+  }
+  .containerFormLogin .formFlex .inputLabel button {
+    margin-top: 25px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: white;
+    background-color: var(--naranja);
+    transition: 0.3s;
+  }
+  .containerFormLogin .formFlex .inputLabel button:active {
+    background-color: #94381e;
+    transform: scale(0.95);
+    transition: 0s;
+  }
+  .containerFormLogin .formFlex .inputLabel p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 282px;
+  }
+  .containerFormLogin .formFlex .inputLabel a {
+    color: #4285f4;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .containerFormLogin .formFlex .inputLabel .showPassword {
+    margin-left: 405px;
+  }
+  .containerFormLogin .formFlex .inputLabel .hidePassword {
+    margin-left: 405px;
+  }
+  .containerFormLogin .container-message .submit-message{
+    margin-top: 50px;
+  }
+  .containerFormLogin h3 {
+    color: var(--naranja);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 140px;
+    text-align: center;
+  }
+  .containerFormLogin .formFlex {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 448px;
+    margin-top: 35px;
+    gap: 25px;
+  }
+  .containerFormLogin .formFlex .inputLabel {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerFormLogin .formFlex .boton {
+    margin-top: 20px;
+  }
+  .containerFormLogin .formFlex .inputLabel label {
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 7px;
+  }
+  .containerFormLogin .formFlex .inputLabel input {
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .containerFormLogin .formFlex .inputLabel input:focus {
+    transform: scale(1.02);
+  }
+  .containerFormLogin .formFlex .inputLabel button {
+    height: 40px;
+    width: 206px;
+    margin: auto;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: white;
+    background-color: var(--naranja);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .containerFormLogin .formFlex .inputLabel button:active {
+    background-color: #94381e;
+    transform: scale(0.95);
+    transition: 0s;
+  }
+  .containerFormLogin .formFlex .inputLabel p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 141px;
+  }
+  .containerFormLogin .formFlex .inputLabel a {
+    color: #4285f4;
+  }
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

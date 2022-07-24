@@ -1,0 +1,128 @@
+.searchConteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--negro);
+    color: white;
+    /*position: fixed;*/
+    /*top: 90px;*/
+    padding: 20px 4vw 0px;
+    z-index: 1;
+    box-shadow: rgb(0 0 0 / 15%) -1px 2px 8px 0px;
+}
+
+.searchConteiner h1{
+    /*font-size:2.5vw ;*/
+    text-align: center;
+}
+
+.searchMenu{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.dates {
+    width: 30vw;
+    height: 40px;
+    background-color: white;
+    color: var(--gris-oscuro);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cities{
+    width: 30vw;
+    height: 40px;
+    background-color: white;
+    color: var(--gris-oscuro);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.selectCity , .selectDate{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.selectCity i, .selectDate i  {
+    margin: 10px;
+}
+
+.selectCity input, .selectDate input{
+    background-color: white;
+    color: var(--gris-oscuro);
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    width: 90%;
+}
+
+.searchButton{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 15vw;
+    height: 40px;
+    border: none;
+    background-color: var(--naranja);
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.fa-xmark{
+    cursor:pointer;
+}
+
+
+@media (max-width:777px){
+
+    .searchConteiner h1{
+        font-size: 26px;
+    }
+    .searchMenu{
+        width: 100%;
+    }
+    .searchButton{
+        width: 40vw;
+    }
+    .dates{
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .cities{
+        width: 100%;
+    }
+}
+@media (max-width:414px){
+
+    .searchMenu {
+        flex-direction: column;
+    }
+
+    .searchButton{
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .cities , .dates{
+        margin: 10px 0px;
+        justify-content: flex-start;
+    }
+}

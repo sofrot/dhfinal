@@ -1,0 +1,22 @@
+stages:
+  - cicd
+
+back_job:
+  stage: cicd
+  only:
+    refs:
+      - newTesting
+  trigger:
+    include:
+      - local: '.gitlab-ci-back.yml'
+    strategy: depend
+
+front_job:
+  stage: cicd
+  only:
+    refs:
+      - newTesting
+  trigger:
+    include:
+      - local: '.gitlab-ci-front.yml'
+    strategy: depend

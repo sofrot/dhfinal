@@ -1,0 +1,288 @@
+.containerFormRegister{
+  flex: 1;
+}
+.containerFormRegister .formFlex .inputLabel .showPassword {
+  font-size: 20px;
+  position: absolute;
+  margin-top: 30.5px;
+  margin-left: 260px;
+  color: #b2b9c1;
+  cursor: pointer;
+}
+.containerFormRegister .formFlex .inputLabel .hidePassword {
+  font-size: 20px;
+  position: absolute;
+  margin-top: 30.5px;
+  margin-left: 260px;
+  color: var(--gris-oscuro);
+  cursor: pointer;
+}
+.containerFormRegister .formFlex .inputLabel input{
+  border: none;
+}
+.containerFormRegister .formFlex .inputLabel input:focus{
+  outline: none;
+}
+.inputLabel .alert{
+  font-size: 12px;
+  color: red;
+ font-weight: bold;
+ position: absolute;
+}
+.containerFormRegister .container-message{
+  display: flex;
+  justify-content: center;
+}
+.containerFormRegister .container-message .submit-message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  color: red;
+  margin-top: 10px;
+  padding: 15px 22px;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: rgba(255, 0, 0, 0.2);
+  border: solid 1.5px red;
+  font-size: 14px;
+}
+
+.containerFormRegister .container-message .submit-message i{
+  font-size: 16px;
+}
+.containerFormRegister .formFlex .inputLabel .invalid-input{
+  background-color: rgba(255, 0, 0, 0.2);
+  border: solid 1.5px red;
+}
+@media only screen and (max-width: 768px) {
+  .containerFormRegister h3{
+    color: var(--naranja);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 61px;
+    text-align: center;
+  }
+  .containerFormRegister .formFlex .fullName{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .containerFormRegister .formFlex{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    margin-top: 9px;
+    gap: 15px;
+  }
+  .containerFormRegister .formFlex .inputLabel, .containerFormRegister .formFlex .fullName .inputLabel{
+    display: flex;
+    flex-direction: column;
+  }
+  .containerFormRegister .formFlex .inputLabel label, .containerFormRegister .formFlex .fullName .inputLabel label{
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+  }
+  .containerFormRegister .formFlex .inputLabel input, .containerFormRegister .formFlex .fullName .inputLabel input{
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+    transition: .3s;
+  }
+  .containerFormRegister .formFlex .inputLabel input:focus, .containerFormRegister .formFlex .fullName .inputLabel input:focus{
+    transform: scale(1.02);
+  }
+  .containerFormRegister .formFlex .inputLabel button{
+    margin-top: 20px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    letter-spacing: .8px;
+    color: white;
+    background-color: var(--naranja);
+    transition: .3s;
+  }
+  .containerFormRegister .formFlex .inputLabel button:active{
+    background-color:#94381e;
+    transform: scale(.95);
+    transition: 0s;
+  }
+  .containerFormRegister .formFlex .inputLabel p{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .containerFormRegister .formFlex .inputLabel a{
+    color: #4285F4;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .containerFormRegister .formFlex .inputLabel .showPassword {
+    margin-top: 33px;
+    margin-left: 305px;
+  }
+  .containerFormRegister .formFlex .inputLabel .hidePassword {
+    margin-top: 33px;
+    margin-left: 305px;
+  }
+  .containerFormRegister .container-message .submit-message{
+    margin-top: 35px;
+  }
+  .containerFormRegister h3{
+    color: var(--naranja);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .containerFormRegister .formFlex .fullName{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .containerFormRegister .formFlex{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 346px;
+    margin-top: 55px;
+    gap: 21px;
+  }
+  .containerFormRegister .formFlex .inputLabel, .containerFormRegister .formFlex .fullName .inputLabel{
+    display: flex;
+    flex-direction: column;
+  }
+  .containerFormRegister .formFlex .inputLabel label, .containerFormRegister .formFlex .fullName .inputLabel label{
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 7px;
+  }
+  .containerFormRegister .formFlex .inputLabel input, .containerFormRegister .formFlex .fullName .inputLabel input{
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+    transition: .3s;
+  }
+  .containerFormRegister .formFlex .inputLabel input:focus, .containerFormRegister .formFlex .fullName .inputLabel input:focus{
+    transform: scale(1.02);
+  }
+  .containerFormRegister .formFlex .inputLabel button{
+    margin-top: 25px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    letter-spacing: .8px;
+    color: white;
+    background-color: var(--naranja);
+    transition: .3s;
+  }
+  .containerFormRegister .formFlex .inputLabel button:active{
+    background-color:#94381e;
+    transform: scale(.95);
+    transition: 0s;
+  }
+  .containerFormRegister .formFlex .inputLabel p{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 174px;
+  }
+  .containerFormRegister .formFlex .inputLabel a{
+    color: #4285F4;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .containerFormRegister .formFlex .inputLabel .showPassword {
+    margin-left: 465px;
+  }
+  .containerFormRegister .formFlex .inputLabel .hidePassword {
+    margin-left: 465px;
+  }
+  .containerFormRegister .container-message .submit-message{
+    margin-top: 20px;
+  }
+  .containerFormRegister h3{
+    color: var(--naranja);
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 80px;
+    text-align: center;
+  }
+  .containerFormRegister .formFlex .fullName{
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    max-height: 65px;
+  }
+  .containerFormRegister .formFlex{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 510px;
+    margin-top: 12px;
+    gap: 26.2px;
+  }
+  .containerFormRegister .formFlex .inputLabel{
+    display: flex;
+    flex-direction: column;
+  }
+  .containerFormRegister .formFlex .fullName .inputLabel{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .containerFormRegister .formFlex .inputLabel label, .containerFormRegister .formFlex .fullName .inputLabel label{
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 7px;
+  }
+  .containerFormRegister .formFlex .inputLabel input, .containerFormRegister .formFlex .fullName .inputLabel input{
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    transition: .3s;
+    width: 100%;
+  }
+  .containerFormRegister .formFlex .inputLabel input:focus, .containerFormRegister .formFlex .fullName .inputLabel input:focus{
+    transform: scale(1.02);
+  }
+  .containerFormRegister .formFlex .inputLabel button{
+    margin-top: 25px;
+    height: 40px;
+    width: 206px;
+    margin: auto;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    letter-spacing: .8px;
+    color: white;
+    background-color: var(--naranja);
+    cursor: pointer;
+    transition: .3s;
+  }
+  .containerFormRegister .formFlex .inputLabel button:active{
+    background-color:#94381e;
+    transform: scale(.95);
+    transition: 0s;
+  }
+  .containerFormRegister .formFlex .inputLabel p{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 67px;
+  }
+  .containerFormRegister .formFlex .inputLabel a{
+    color: #4285F4;
+  }
+}

@@ -1,0 +1,245 @@
+.card-main {
+  display: flex;
+  background-color: #ffff;
+  width: 639px;
+  min-height: 270px;
+  border: 0px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top .type-title {
+  display: flex;
+  flex-direction: column;
+}
+.card-h5-container {
+  display: flex;
+  height: 60px;
+  max-width: 180px;
+}
+.top .type-title h5 {
+  font-size: 24px;
+  color: var(--negro);
+}
+.top .type-stars {
+  display: flex;
+}
+.top .type-stars p {
+  font-size: 14px;
+  opacity: 50%;
+  margin-left: 0px;
+}
+.top .type-stars .stars-rating {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.good-stars {
+  color: var(--naranja) !important ;
+}
+
+.img-container-listado {
+  position: relative;
+  width: 50%;
+  margin: 0px;
+  height: 274px;
+}
+
+.img1 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+
+}
+
+.icon {
+  position: absolute;
+  top: 18px;
+  right: 14.66px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.card-text {
+  width: 50%;
+  margin: 15px 15px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-button {
+  font-weight: 600;
+  color: var(--negro);
+  text-align: center;
+  border: 2px solid var(--negro);
+  padding: 0.275rem 0.75rem;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: var(--negro);
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.2s;
+}
+.card-button:active {
+  transform: scale(0.97);
+  background-color: var(--gris-claro);
+  transition: 0.2s;
+}
+
+/*STARS RATING ----------------------- */
+.stars-rating {
+  display: flex;
+}
+.stars-rating > i {
+  color: rgb(153, 153, 153);
+  margin: 0px;
+}
+
+.hotel-rating > div {
+  width: 50%;
+  text-align: right;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 80px;
+}
+.rating-container p {
+  font-size: 13px;
+  text-align: end;
+}
+.rating-container .average {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.rating-container .average p {
+  padding: 4px 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--negro);
+  border-radius: 10px;
+}
+.container-title-ratingtext {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.container-title-ratingtext > h5 {
+  width: 70%;
+}
+.container-title-ratingtext > p {
+  width: 30%;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: end;
+  align-self: flex-end;
+}
+
+.hotel-desc1 {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.desc1-item1 {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.item1-icon {
+  color: var(--negro);
+}
+
+.item1-text-container {
+  margin-left: 6px;
+  margin-right: 0px;
+}
+
+.show-product-ubication {
+  color: var(--naranja);
+  cursor: pointer;
+}
+.show-more{
+  font-weight: bold;
+  cursor: pointer;
+}
+.desc1-item2 {
+  margin-left: 4px;
+}
+
+.desc1-item3 {
+  margin-top: 8px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.desc2 {
+  height: 80px;
+  width: 103%;
+  font-weight: 500;
+  font-size: 14px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #f0572d92 #c2d2e49b;
+  margin-bottom: 2px;
+}
+/*chrome*/
+.desc2::-webkit-scrollbar {
+  background-color: white;
+  width: 8px;
+  border-radius: 5px;
+}
+.desc2::-webkit-scrollbar-thumb {
+  background: var(--gris-claro);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 414px) {
+  .card-main {
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    margin: 5px 5px 20px 5px;
+  }
+  .img-container-listado {
+    width: 100%;
+  }
+  .card-text {
+    margin: 10px 0px;
+    width: 90%;
+  }
+  .img1 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 10px;
+  }
+}

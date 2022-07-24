@@ -1,0 +1,49 @@
+@media only screen and (max-width: 600px) {
+  footer .container {
+    display: flex;
+    background-color: whitesmoke;
+  }
+  footer .copyright {
+    color: var(--negro);
+    margin: 19px 0px 19px 50px;
+    display: flex;
+    align-items: center;
+  }
+  footer .social {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    position: relative;
+    z-index: 1;
+  }
+  footer .copyright {
+    color: var(--negro);
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+  }
+  footer .social {
+    display: flex;
+    margin: 5px 50px 5px 0px;
+    gap: 15px;
+    align-items: center;
+  }
+  footer .social a {
+    padding: 10px;
+    transition: 0.3s;
+  }
+  footer .social a:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+  footer .social i {
+    font-size: 25px;
+    color: var(--negro);
+  }
+}

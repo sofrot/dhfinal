@@ -1,0 +1,1074 @@
+.product-view{
+  flex: 1;
+}
+.good-stars {
+  color: var(--naranja) !important;
+}
+
+.product-carousel-container {
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.574);
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-background {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  top: 1px;
+  z-index: -2;
+}
+
+.popup {
+  position: absolute;
+  color: var(--negro);
+}
+
+.popup button {
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  transition: background 0.1s linear, border-color 0.1s linear, color 0.1s linear;
+}
+
+.popup {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 100%;
+  opacity: 1;
+  pointer-events: none;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(100%);
+  transition: top 0s 0.3s ease-in-out,
+    opacity 0.2s 0s ease-in-out,
+    transform 0.6s 0s ease-in-out;
+}
+
+.popup.show {
+
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-95%);
+  transition: top 0s 0s ease-in-out,
+    opacity 0.2s 0s ease-in-out,
+    transform 0.4s 0s ease-in-out;
+}
+
+.popup :is(header, .icons, .field) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup header {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebedf9;
+}
+
+.popup header span {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.popup header .close,
+.icons a {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.popup header .close {
+  color: #878787;
+  font-size: 17px;
+  background: #f2f3fb;
+  height: 33px;
+  width: 33px;
+  cursor: pointer;
+}
+
+.popup header .close:hover {
+  background: #ebedf9;
+}
+
+.popup .content {
+  margin: 20px 0;
+}
+
+.popup .icons {
+  margin: 15px 0 20px 0;
+}
+
+.popup .content p {
+  font-size: 16px;
+}
+
+.popup .content .icons a {
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid;
+}
+
+.popup .icons a i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.popup .icons .facebook-icon {
+  color: #1877F2;
+  border-color: #b7d4fb;
+}
+
+.popup .icons .facebook-icon:hover {
+  background: #1877F2;
+}
+
+.popup .icons .twitter-icon {
+  color: #46C1F6;
+  border-color: #b6e7fc;
+}
+
+.popup .icons .twitter-icon:hover {
+  background: #46C1F6;
+}
+
+.popup .icons .pinterest-icon {
+  color: #e1306c;
+  border-color: #f5bccf;
+}
+
+.popup .icons .pinterest-icon:hover {
+  background: #e1306c;
+}
+
+.popup .icons .whatsapp-icon {
+  color: #25D366;
+  border-color: #bef4d2;
+}
+
+.popup .icons .whatsapp-icon:hover {
+  background: #25D366;
+}
+
+.popup .icons .telegram-icon {
+  color: #0088cc;
+  border-color: #b3e6ff;
+}
+
+.popup .icons .telegram-icon:hover {
+  background: #0088cc;
+}
+
+.popup .icons a:hover {
+  color: #fff;
+  border-color: transparent;
+}
+
+.popup .icons a:hover i {
+  transform: scale(1.2);
+}
+
+.popup .content .field {
+  margin: 12px 0 -5px 0;
+  height: 45px;
+  border-radius: 4px;
+  padding: 0 5px;
+  border: 1px solid #e1e1e1;
+}
+
+.popup .field.active {
+  border-color: var(--naranja);
+}
+
+.popup .field i {
+  font-size: 18px;
+  text-align: center;
+  padding: 5px 8px;
+}
+
+.popup .field.active i {
+  color: var(--naranja);
+}
+
+.popup .field input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.popup .field button {
+  color: #fff;
+  padding: 5px 18px;
+  background: var(--naranja);
+  margin-left: 5px;
+}
+
+.popup .field button:hover {
+  background: #da4f28;
+}
+
+.img-display-react-container {
+  display: flex;
+}
+
+.product-view h2 {
+  padding: 20px 10px 5px;
+  color: var(--negro);
+}
+
+.product-view .top-container, .userbookings-super-container .top-container{
+  background-color: var(--negro);
+  color: white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.product-view .top-container .top, .userbookings-super-container .top-container .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-view .top-container .top .product-title, .admin-title, .userbookings-super-container .top-container .top  .product-title{
+  margin: 10px;
+}
+
+.product-view .top-container .top .product-title h4,.my-favourites-view .top-container .top .admin-title h4,.createProduct-view .top-container .top .admin-title h4, .userbookings-super-container .top-container .top  .admin-title h4 {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.product-view .top-container .top .product-title h2,.my-favourites-view .top-container .top .admin-title h2,.createProduct-view .top-container .top .admin-title h2, .userbookings-super-container .top-container .top  .admin-title h2 {
+  padding: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-view .top-container .top .back-home, .userbookings-super-container .top-container .top  .back-home {
+  display: flex;
+  align-items: center;
+}
+
+.product-view .top-container .top .back-home a i, .userbookings-super-container .top-container .top  .back-home a i {
+  font-size: 30px;
+  margin-right: 10px;
+  color: white;
+  padding: 10px;
+  transition: .1s;
+}
+.product-view .top-container .top .back-home a i:hover,.userbookings-super-container .top-container .top  .back-home a i:hover {
+  color: var(--naranja);
+  transition: .2s;
+}
+.product-view .top-container .top .back-home a i:active, .userbookings-super-container .top-container .top  .back-home a i:active {
+  padding-right: 30px;
+  transition: .1s;
+}
+
+.product-view .location-container .location {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.product-view .location-container .location .location-info {
+  display: flex;
+  gap: 5px;
+  width: 185px;
+}
+
+.product-view .location-container .location .location-info i {
+  display: flex;
+  align-items: center;
+}
+
+.product-view .location-container .location .location-info p {
+  display: flex;
+  align-items: center;
+}
+
+.product-view .location-container .location .rating {
+  display: flex;
+}
+
+.product-view .location-container .location .rating .valoration-stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.product-view .location-container .location .rating .valoration-stars p {
+  text-align: center;
+}
+
+.product-view .location-container .location .rating .valoration-stars .rating-stars {
+  display: flex;
+  color: rgb(153, 153, 153);
+}
+
+.product-view .location-container .location .rating .average {
+  display: flex;
+  align-items: center;
+}
+
+.product-view .location-container .location .rating .average p {
+  padding: 8px 14px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: var(--negro);
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.product-view .img-container .gallery {
+  display: none;
+}
+
+.product-view .img-container {
+  position: relative;
+  background-color: white;
+  background-size: cover;
+  height: 236px;
+}
+
+.product-view .img-container .actions {
+  position: relative;
+  color: white;
+  font-size: 25px;
+  z-index: 1;
+  display: flex;
+}
+
+.product-view .img-container .actions .fa-share-nodes,
+.product-view .img-container .actions .fa-heart {
+  margin: 10px;
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  height: "28px";
+  width: "28px";
+}
+
+
+.product-view .img-container .counter {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.product-view .info-container {
+  margin: 12px;
+}
+
+.product-view .info-container h2 {
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.product-view .info-container p {
+  margin-bottom: 15px;
+  color: var(--gris-oscuro);
+}
+
+.product-view .features-container {
+  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.product-view .features-container hr {
+  color: var(--naranja);
+  background-color: var(--naranja);
+  border-style: solid;
+  border-color: var(--naranja);
+}
+
+.product-view .features-container .features .feature-item i {
+  color: var(--naranja);
+}
+
+.product-view .features-container .features .feature-item p {
+  color: var(--gris-oscuro);
+}
+
+.product-view .features-container .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.product-view .features-container .features .feature-item {
+  width: 50%;
+  display: flex;
+  padding: 22px 15px;
+  gap: 5px;
+}
+
+.product-view .calendar-container {
+  background-color: var(--gris-claro);
+}
+
+.product-view .calendar-container h2 {
+  padding: 20px 12px 0px;
+}
+
+.product-view .calendar-container .desktop-container .calendar-desktop .back-button,
+.product-view .calendar-container .desktop-container .calendar-desktop .next-button {
+  display: none;
+}
+
+.product-view .calendar-container .calendar-mobile {
+  display: flex;
+  justify-content: center;
+}
+
+.product-view .calendar-container .calendar-mobile .react-calendar {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 15px 10px;
+  padding: 15px 30px;
+  width: 100%;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.product-view .calendar-container .calendar-mobile .react-calendar__navigation {
+  margin: 5px;
+  padding: 5px;
+}
+
+.product-view .calendar-container .calendar-mobile .react-calendar__navigation .react-calendar__navigation__arrow {
+  background-color: white;
+  font-size: 35px;
+}
+
+.product-view .calendar-container .calendar-mobile .react-calendar__navigation .react-calendar__navigation__label {
+  font-size: 16px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+}
+
+.product-view .calendar-container .calendar-mobile .react-calendar__viewContainer .react-calendar__month-view__weekdays .react-calendar__month-view__weekdays__weekday abbr {
+  color: var(--negro);
+  text-decoration: none;
+}
+
+.product-view .calendar-container .calendar-mobile .react-calendar__viewContainer .react-calendar__tile:disabled {
+  background-color: white;
+  color: var(--gris-claro);
+}
+
+.product-view .calendar-container .booking {
+  padding: 10px 12px 20px;
+}
+
+.product-view .calendar-container .booking p {
+  color: var(--gris-oscuro);
+  margin-bottom: 10px;
+}
+
+.product-view .calendar-container .booking button {
+  width: 100%;
+  background-color: var(--naranja);
+  border-color: var(--naranja);
+  border-style: solid;
+  border-radius: 7px;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.product-view .calendar-container .booking button:active {
+  transform: scale(0.97);
+  background-color: #da4f28;
+  border-color: #da4f28;
+  transition: 0.2s;
+}
+
+.product-view .map-container {
+  box-shadow: 0 -4px 8px -2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.product-view .map-container hr {
+  color: var(--naranja);
+  background-color: var(--naranja);
+  border-style: solid;
+  border-color: var(--naranja);
+}
+
+.product-view .map-container p {
+  color: var(--gris-oscuro);
+  padding: 15px 12px;
+}
+
+.product-view .map-container .map {
+  margin: 5px 12px;
+}
+
+.product-view .map-container .map iframe {
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.product-view .map-container hr {
+  color: var(--naranja);
+  background-color: var(--naranja);
+  border-style: solid;
+  border-color: var(--naranja);
+}
+
+.product-view .detail-container {
+  padding-bottom: 20px;
+}
+
+.product-view .detail-container p {
+  color: var(--gris-oscuro);
+  padding: 15px 12px;
+}
+
+.product-view .detail-container hr {
+  color: var(--naranja);
+  background-color: var(--naranja);
+  border-style: solid;
+  border-color: var(--naranja);
+}
+
+.product-view .detail-container .item h3 {
+  font-size: 21px;
+  padding: 20px 20px 5px;
+  color: var(--negro);
+}
+
+.product-view .detail-container .item ul {
+  padding: 5px 20px;
+  color: var(--gris-oscuro);
+  list-style-type: none;
+}
+
+.product-view .detail-container .item ul li {
+  padding: 5px 0px;
+}
+
+.product-view .calendar-container .calendar-line {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery {
+    display: flex;
+  }
+
+  .popup-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 500;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .popup-container {
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+  }
+
+  .popup {
+    position: absolute;
+    left: 50%;
+  }
+
+  .popup {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    top: -150%;
+    max-width: 450px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: top 0s 0.2s ease-in-out,
+      opacity 0.2s 0s ease-in-out,
+      transform 0.2s 0s ease-in-out;
+  }
+
+  .popup.show {
+    top: 10vh;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0s 0s ease-in-out,
+      opacity 0.2s 0s ease-in-out,
+      transform 0.2s 0s ease-in-out;
+
+  }
+
+  .product-view .features-container .features .feature-item {
+    width: 50%;
+    display: flex;
+    padding: 25px 35px;
+    gap: 5px;
+  }
+
+  .product-view .top-container .top {
+    padding: 0px 10px;
+  }
+
+  .product-view .location-container .location {
+    padding: 10px 20px;
+  }
+
+  .product-view .location-container .location .location-info {
+    width: 75%;
+  }
+
+  .product-view .img-container {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .product-view .img-container .actions {
+    z-index: 2;
+    font-size: 30px;
+    padding: 10px;
+    height: 100px;
+  }
+
+  .product-view .info-container {
+    padding: 0px 20px;
+  }
+
+  .product-view .features-container h2 {
+    padding-left: 32px;
+  }
+
+  .product-view .features-container .features .left-features,
+  .product-view .features-container .features .right-features {
+    width: 50%;
+  }
+
+  .product-view .features-container .features .left-features .feature-item,
+  .product-view .features-container .features .right-features .feature-item {
+    padding: 6px 20px;
+  }
+
+  .product-view .calendar-container {
+    padding: 0px 20px;
+  }
+
+  .product-view .calendar-container .react-calendar .react-calendar__navigation {
+    display: flex;
+  }
+
+  .product-view .calendar-container .react-calendar .react-calendar__navigation__label {
+    display: flex;
+    gap: 110px;
+    align-items: flex-end;
+  }
+
+  .product-view .calendar-container .react-calendar .react-calendar__navigation__label__labelText--from {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .product-view .calendar-container .react-calendar .react-calendar__navigation__label__labelText--to {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .product-view .calendar-container .react-calendar .react-calendar__navigation__label__divider {
+    display: none;
+  }
+
+  .product-view .calendar-container .calendar-line {
+    position: absolute;
+    display: block;
+    margin-top: 45px;
+    height: 280px;
+    color: var(--gris-claro);
+    border-color: var(--gris-claro);
+    background-color: var(--gris-claro);
+  }
+
+  .product-view .calendar-container .booking div {
+    display: flex;
+  }
+
+  .product-view .calendar-container .booking a {
+    width: 50%;
+  }
+
+  .product-view .map-container h2,
+  .product-view .map-container p {
+    padding-left: 30px;
+  }
+
+  .product-view .map-container .map {
+    padding: 0px 20px;
+  }
+
+  .product-view .detail-container h2 {
+    padding-left: 30px;
+  }
+
+  .product-view .detail-container .items-container .rules {
+    display: flex;
+  }
+
+  .product-view .detail-container .items-container .rules .item {
+    width: 50%;
+  }
+
+  .product-view .detail-container .item {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .popup.show {
+    top: 20vh;
+  }
+
+  .product-view .calendar-container .booking a {
+    width: 100%;
+  }
+
+  .product-view .features-container .features .feature-item {
+    width: 25%;
+    display: flex;
+    padding: 30px 35px;
+    gap: 5px;
+  }
+
+  .img-display-react-container {
+    display: flex;
+  }
+
+  .product-close-carousel {
+    display: flex;
+  }
+
+  .product-view {
+    position: relative;
+  }
+
+  .product-carousel-container {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.574);
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-background {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 1px;
+    z-index: -2;
+  }
+
+  .mobile-carousel-container {
+    display: none;
+  }
+
+  .product-view .top-container {
+    position: relative;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
+  }
+
+  .product-view .location-container {
+    background-color: var(--gris-claro);
+  }
+
+  .product-view .img-container {
+    height: 100%;
+    background-image: none;
+    background-color: white;
+  }
+
+  .product-view .img-container .actions {
+    height: auto;
+    padding: 0 20px;
+    color: var(--negro);
+    text-shadow: none;
+  }
+
+  .product-view .img-container .actions .fa-heart,
+  .product-view .img-container .actions .fa-share-nodes {
+    text-shadow: none;
+  }
+
+  .product-view .img-container .counter {
+    display: none;
+  }
+
+  .product-view .img-container .gallery {
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-view .img-container .gallery img {
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.1s;
+  }
+
+  .product-view .img-container .gallery img:hover {
+    transform: scale(1.01);
+    transition: 0.1s;
+  }
+
+  .product-view .img-container .gallery .main-img {
+    width: 50%;
+    height: 380px;
+    object-fit: cover;
+  }
+
+  .product-view .img-container .gallery .other-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .product-view .img-container .gallery .other-img .gallery-last-image-container {
+    position: relative;
+    border-radius: 6px;
+    width: 50%;
+  }
+
+  .product-view .img-container .gallery .other-img .gallery-last-image-container img {
+    object-position: 50% 55%;
+    object-fit: cover;
+    width: 100%;
+    height: 190px;
+  }
+
+  .product-view .img-container .gallery .other-img .img {
+    object-position: 50% 70%;
+    object-fit: cover;
+    width: 50%;
+    height: 190px;
+  }
+
+  .product-view .img-container .gallery .other-img p {
+    position: absolute;
+    color: white;
+    bottom: 15px;
+    right: 40px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .product-view .features-container .left-features,
+  .product-view .features-container .right-features {
+    display: flex;
+  }
+
+  .product-view .features-container .left-features .first-left,
+  .product-view .features-container .left-features .second-left,
+  .product-view .features-container .right-features .first-right,
+  .product-view .features-container .right-features .second-right {
+    width: 50%;
+  }
+
+  .product-view .calendar-container .desktop-container {
+    display: flex;
+  }
+
+  .product-view .calendar-container .desktop-container .calendar-desktop {
+    width: 70%;
+  }
+
+  .product-view .calendar-container .desktop-container .calendar-desktop .react-calendar {
+    height: 330px;
+    padding: 15px 65px;
+  }
+
+  .product-view .calendar-container .desktop-container .calendar-desktop .react-calendar .react-calendar__navigation {
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .product-view .calendar-container .calendar-mobile .react-calendar__navigation .react-calendar__navigation__prev-button:disabled,
+  .product-view .calendar-container .calendar-mobile .react-calendar__navigation .react-calendar__navigation__next-button:disabled {
+    color: rgba(16, 16, 16, 0.3)
+  }
+
+  .product-view .calendar-container .calendar-mobile .react-calendar__navigation .react-calendar__navigation__prev-button {
+    display: flex;
+    left: 10px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--naranja);
+    font-size: 35px;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    padding-bottom: 14px;
+    padding-left: 9px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 120PX;
+    left: -55px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+  }
+
+  .product-view .calendar-container .calendar-mobile .react-calendar__navigation .react-calendar__navigation__next-button {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--naranja);
+    font-size: 35px;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    padding-bottom: 14px;
+    padding-left: 11px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 120PX;
+    right: -55px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+  }
+
+  .product-view .calendar-container .calendar-mobile .react-calendar__navigation .react-calendar__navigation__prev-button:active,
+  .product-view .calendar-container .calendar-mobile .react-calendar__navigation .react-calendar__navigation__next-button:active {
+    transform: scale(0.97);
+    background-color: #da4f28;
+    border-color: #da4f28;
+    box-shadow: none;
+    transition: 0.2s;
+  }
+
+  .product-view .calendar-container .desktop-container .calendar-line {
+    display: block;
+    height: 275px;
+    color: var(--gris-claro);
+    background-color: var(--gris-claro);
+    border-color: var(--gris-claro);
+  }
+
+  .product-view .calendar-container .desktop-container .booking {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product-view .calendar-container .desktop-container .booking div {
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-view .detail-container .items-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px;
+  }
+
+  .product-view .detail-container .items-container .item {
+    width: 33%;
+    padding-left: 0;
+  }
+}
+
+.product-view .calendar-container .react-calendar {
+  width: 400px;
+  max-width: 100%;
+  background-color: #fff;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
+
+.product-view .calendar-container .react-calendar__tile:enabled:hover,
+.product-view .calendar-container .react-calendar__tile:enabled:focus {
+  background: #f8f8fa;
+  font-size: 13.5px;
+  font-weight: bold;
+}
+
+.product-view .calendar-container .react-calendar__tile--hasActive:enabled:hover,
+.product-view .calendar-container .react-calendar__tile--hasActive:enabled:focus {
+  background: #f8f8fa;
+}
+
+.product-view .calendar-container .react-calendar__tile--active:enabled:hover,
+.product-view .calendar-container .react-calendar__tile--active:enabled:focus {
+  background: var(--naranja);
+  color: white;
+}
+
+.product-view .calendar-container .react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #f8f8fa;
+}
+
+.product-view .calendar-container .react-calendar__tile--range {
+  background: #ececec8e;
+  color: var(--naranja);
+  border-radius: 0;
+}
+
+.product-view .calendar-container .react-calendar__tile--rangeStart {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: var(--naranja);
+  color: white;
+}
+
+.product-view .calendar-container .react-calendar__tile--rangeEnd {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: var(--naranja);
+  color: white;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: var(--gris-oscuro);
+}
+
+.react-calendar__tile--now {
+  background: white;
+}

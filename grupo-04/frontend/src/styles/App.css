@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --naranja: #d83f15;
+  --gris-oscuro: #31363f;
+  --negro: #191b1d;
+  --gris-claro: #dfe4ea;
+  --font-bold: 700;
+}
+
+#root{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
